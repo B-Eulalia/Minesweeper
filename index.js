@@ -12,7 +12,7 @@ for (let i = 0; i < row; ++i) {
     y.innerHTML = "";
     y.id = i + "" + j;
     y.onclick = function() {
-      myFunction(i, j);
+      addElementTable(i, j);
     };
     y.addEventListener('contextmenu', function(ev) {
       ev.preventDefault();
@@ -116,7 +116,7 @@ function addFlag(i, j) {
      }
 }
 
-function myFunction(i,j) { 
+function addElementTable(i,j) { 
   let cellCall;
   cellCall = i + "" + j;
   if (listItems[parseInt(cellCall)] === "💣") {
